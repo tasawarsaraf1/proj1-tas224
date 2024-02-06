@@ -1,0 +1,185 @@
+
+<!--Tasawar Saraf CSE 264 Section 010-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasawar Saraf Project One CSE 264</title>
+    <style>
+
+    /*Default CSS Styling (learned from FreeCodeCamp*/
+    /*https://forum.freecodecamp.org/t/universal-selector-and-body-selector-rules/425144/4*/
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #F5D98E;
+        }
+        
+        #container{
+            width: 800px;
+            margin: 0 auto; /*So I can center it in the middle */
+            padding: 0;
+        }
+
+        /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+        #sub-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        /*2/3 to 1/3 so 2:1 ratio using flex*/
+        /*https://blog.hubspot.com/website/css-margin-vs-padding*/
+        #left-column{
+            flex: 2;
+            /*The boxes were next to each other so I had to space*/
+            margin-right: 30px;
+        }
+        #right-column{
+            flex: 1;
+            align-items: flex-start;
+        }
+
+        /*https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro*/
+        /*https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border*/
+    
+        table, th, td {
+            border: 1px solid;
+        }
+
+        #row-name{
+            background-color: #F57F3B !important;
+        }
+
+        #fun-fact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .song{
+            background-color: #F5D8A3;
+        }
+
+        header,footer{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+        }
+
+        footer{
+            background-color: #e9c46a;
+            margin-top: 10px;
+        }
+
+        header{
+            background-color: #bc6c25;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tasawar Saraf Project 1 CSE 264 Website </h1>
+     </header>
+    <div id="container">
+        <div id="sub-container">
+            <div id="left-column">
+                <div>
+                    <h2>Biography</h2>
+                    <h3>Early Life</h3>
+                    <p>I was born at New York City and currently reside in the borough of Queens. 
+                        My ethnicity is Bengali. I have 7 siblings, and I am the oldest. Growing up, 
+                        I enjoyed hanging out with friends and family. </p>
+                    <h3>Life at Lehigh</h3>
+                    <p>I arrived to Lehigh August 2020. I am currently in my senior year of college. I study Computer Science. 
+                        I really enjoy Lehigh. I made a lot of favorite memories with friends. I hope to graduate and find 
+                    a software engineering job out of college. </p>
+                    <h3>Life After Lehigh</h3>
+                        <p>Ideally I would want to find a software engineering job in New York City to be close to home & family. 
+                            I would also love to travel as I never been on a plane. Hope to have a family one day. </p>
+                </div>
+                
+                <div>
+                    <h2>Favorites</h2>
+                    <ul>
+                        <li>Longboarding</li>
+                        <li>Nature Walks</li>
+                        <li>Video Games</li>
+                    </ul>
+                </div>
+               
+                <div>
+                    <h2>Courses</h2>
+                    <ol>
+                        <li>CSE 264: Web Development</li>
+                        <li>IR-040: United Nations</li>
+                        <li>IR-086: Israeli-Palestinian Conflict</li>
+                        <li>IR-210: Foreign Policy</li>
+                    </ol>
+                </div>
+                
+                <div>
+    
+                    <h2>Music</h2>
+                    <!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro-->
+                    <!--https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border-->
+                    <table>
+                        <tr id="row-name">
+                            <th>Songs</th>
+                            <th>Artists</th>
+                        </tr>
+        
+                        <tr class="song">
+                            <th>Ho Chi Minh</th>
+                            <th>Bas</th>
+                        </tr>
+        
+                        <tr class="song">
+                            <th>Work Out</th>
+                            <th>J. Cole</th>
+                        </tr>
+        
+                        <tr class="song">
+                            <th>Sparks Will Fly</th>
+                            <th>J. Cole & Jhené Aiko</th>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            
+            <aside id="right-column">
+                    <div>
+                        <img src="myself.jpeg"/>
+                    </div>
+                    <div id="fun-fact">
+                        <h2>Fun Facts</h2>
+                        <ol>
+                            <li>I taught my cat how to nod and wink</li>
+                            <li>I am a lefty.</li>
+                            <li>I love jackfruits and persimmon</li>
+                        </ol>
+                    </div>
+            </aside>
+
+        </div>
+    
+    </div>
+
+    <footer>
+        <h5>&copy; Tasawar (Taz) Saraf CSE 264 Section 010</h5>
+    </footer>
+</body>
+</html>
